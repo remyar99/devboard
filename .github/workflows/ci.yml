@@ -44,7 +44,7 @@ jobs:
             - name: Setup Golang
               uses: actions/setup-go@v5
               with:
-                go-version-file: 'go.mod'
+                go-version-file: 'backend/go.mod'
                 cache-dependency-path: backend/go.sum
             - name: verify dependencies
               run: go mod tidy
